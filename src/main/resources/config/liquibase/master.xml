@@ -5,4 +5,20 @@
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20180625150004_added_entity_LeftUnidirectional.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20180625150005_added_entity_RightOneToOneUnidirectional.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20180625150006_added_entity_RightOneToManyUnidirectional.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20180625150007_added_entity_RightManyToOneUnidirectional.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20180625150008_added_entity_RightManyToManyUnidirectional.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20180625150009_added_entity_LeftBidirectional.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20180625150010_added_entity_RightOneToOneBidirectional.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20180625150011_added_entity_RightOneToManyBidirectional.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20180625150012_added_entity_RightManyToOneBidirectional.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20180625150013_added_entity_RightManyToManyBidirectional.xml" relativeToChangelogFile="false"/>
+	<!-- add-entities - entities added -->
+    <include file="classpath:config/liquibase/changelog/20180625150004_added_entity_constraints_LeftUnidirectional.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20180625150006_added_entity_constraints_RightOneToManyUnidirectional.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20180625150009_added_entity_constraints_LeftBidirectional.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20180625150011_added_entity_constraints_RightOneToManyBidirectional.xml" relativeToChangelogFile="false"/>
+	<!-- add-constraints-entities - constraints to entities added -->
 </databaseChangeLog>
