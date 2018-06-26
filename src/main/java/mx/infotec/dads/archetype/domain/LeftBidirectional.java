@@ -20,7 +20,8 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- */package mx.infotec.dads.archetype.domain;
+ */
+package mx.infotec.dads.archetype.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.util.HashSet;
@@ -39,6 +40,7 @@ import java.io.Serializable;
 @Entity
 @Table(name = "left_bidirectional")
 public class LeftBidirectional implements Serializable {
+    
     private static final long serialVersionUID = 1L;
     
     /**
@@ -50,7 +52,8 @@ public class LeftBidirectional implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", unique = true, nullable = false)
-    private Long id;	    
+    private Long id;
+
     @OneToOne
     @JoinColumn(name = "recursive_child_one_to_one_bidirectional_id", unique = true)
     private LeftBidirectional recursiveChildOneToOneBidirectional;
@@ -86,6 +89,7 @@ public class LeftBidirectional implements Serializable {
     @OneToOne
     @JoinColumn(name = "right_one_to_one_bidirectional_id", unique = true)
     private RightOneToOneBidirectional rightOneToOneBidirectional;
+
     @OneToOne(mappedBy = "recursiveChildOneToOneBidirectional")
     private LeftBidirectional recursiveParentOneToOneBidirectional;
     	
@@ -99,6 +103,7 @@ public class LeftBidirectional implements Serializable {
     @ManyToMany(mappedBy = "recursiveChildrenManyToManyBidirectional")
     @JsonIgnore
     private Set<LeftBidirectional> recursiveParentManyToManyBidirectional = new HashSet<>();
+
     /**
      * Este método fue generado automaticamente por kukulkan 
      * Este método GETTER fue generado para la llave primaria left_bidirectional.id
@@ -121,13 +126,16 @@ public class LeftBidirectional implements Serializable {
      */
     public void setId(Long id) {
         this.id = id;
-    }	    public LeftBidirectional getRecursiveParentOneToOneBidirectional() {
+    }	    
+    
+    public LeftBidirectional getRecursiveParentOneToOneBidirectional() {
         return recursiveParentOneToOneBidirectional;
     }
 
     public void setRecursiveParentOneToOneBidirectional(LeftBidirectional recursiveParentOneToOneBidirectional) {
         this.recursiveParentOneToOneBidirectional = recursiveParentOneToOneBidirectional;
     }
+
     public LeftBidirectional getRecursiveParentOneToManyBidirectional() {
         return recursiveParentOneToManyBidirectional;
     }
@@ -135,6 +143,7 @@ public class LeftBidirectional implements Serializable {
     public void setRecursiveParentOneToManyBidirectional(LeftBidirectional recursiveParentOneToManyBidirectional) {
         this.recursiveParentOneToManyBidirectional = recursiveParentOneToManyBidirectional;
     }
+
     public Set<LeftBidirectional> getRecursiveParentManyToOneBidirectional() {
         return recursiveParentManyToOneBidirectional;
     }
@@ -154,6 +163,7 @@ public class LeftBidirectional implements Serializable {
     public void setRecursiveParentManyToOneBidirectional(Set<LeftBidirectional> recursiveParentManyToOneBidirectional) {
         this.recursiveParentManyToOneBidirectional = recursiveParentManyToOneBidirectional;
     }
+
     public Set<LeftBidirectional> getRecursiveParentManyToManyBidirectional() {
         return recursiveParentManyToManyBidirectional;
     }
@@ -173,6 +183,7 @@ public class LeftBidirectional implements Serializable {
     public void setRecursiveParentManyToManyBidirectional(Set<LeftBidirectional> recursiveParentManyToManyBidirectional) {
         this.recursiveParentManyToManyBidirectional = recursiveParentManyToManyBidirectional;
     }
+
     public LeftBidirectional getRecursiveChildOneToOneBidirectional() {
         return recursiveChildOneToOneBidirectional;
     }
@@ -180,6 +191,7 @@ public class LeftBidirectional implements Serializable {
     public void setRecursiveChildOneToOneBidirectional(LeftBidirectional recursiveChildOneToOneBidirectional) {
         this.recursiveChildOneToOneBidirectional = recursiveChildOneToOneBidirectional;
     }
+
     public Set<LeftBidirectional> getRecursiveChildrenOneToManyBidirectional() {
         return recursiveChildrenOneToManyBidirectional;
     }
@@ -199,6 +211,7 @@ public class LeftBidirectional implements Serializable {
     public void setRecursiveChildrenOneToManyBidirectional(Set<LeftBidirectional> recursiveChildrenOneToManyBidirectional) {
         this.recursiveChildrenOneToManyBidirectional = recursiveChildrenOneToManyBidirectional;
     }
+
     public LeftBidirectional getRecursiveChildManyToOneBidirectional() {
         return recursiveChildManyToOneBidirectional;
     }
@@ -206,6 +219,7 @@ public class LeftBidirectional implements Serializable {
     public void setRecursiveChildManyToOneBidirectional(LeftBidirectional recursiveChildManyToOneBidirectional) {
         this.recursiveChildManyToOneBidirectional = recursiveChildManyToOneBidirectional;
     }
+
     public Set<LeftBidirectional> getRecursiveChildrenManyToManyBidirectional() {
         return recursiveChildrenManyToManyBidirectional;
     }
@@ -225,6 +239,7 @@ public class LeftBidirectional implements Serializable {
     public void setRecursiveChildrenManyToManyBidirectional(Set<LeftBidirectional> recursiveChildrenManyToManyBidirectional) {
         this.recursiveChildrenManyToManyBidirectional = recursiveChildrenManyToManyBidirectional;
     }
+
     public Set<RightManyToManyBidirectional> getRightManyToManyBidirectional() {
         return rightManyToManyBidirectional;
     }
@@ -244,6 +259,7 @@ public class LeftBidirectional implements Serializable {
     public void setRightManyToManyBidirectional(Set<RightManyToManyBidirectional> rightManyToManyBidirectional) {
         this.rightManyToManyBidirectional = rightManyToManyBidirectional;
     }
+
     public RightManyToOneBidirectional getRightManyToOneBidirectional() {
         return rightManyToOneBidirectional;
     }
@@ -251,6 +267,7 @@ public class LeftBidirectional implements Serializable {
     public void setRightManyToOneBidirectional(RightManyToOneBidirectional rightManyToOneBidirectional) {
         this.rightManyToOneBidirectional = rightManyToOneBidirectional;
     }
+
     public Set<RightOneToManyBidirectional> getRightOneToManyBidirectional() {
         return rightOneToManyBidirectional;
     }
@@ -270,6 +287,7 @@ public class LeftBidirectional implements Serializable {
     public void setRightOneToManyBidirectional(Set<RightOneToManyBidirectional> rightOneToManyBidirectional) {
         this.rightOneToManyBidirectional = rightOneToManyBidirectional;
     }
+
     public RightOneToOneBidirectional getRightOneToOneBidirectional() {
         return rightOneToOneBidirectional;
     }
@@ -292,10 +310,12 @@ public class LeftBidirectional implements Serializable {
         }
         return Objects.equals(getId(), leftBidirectional.getId());
     }
+
     @Override
     public int hashCode() {
         return Objects.hashCode(getId());
     }
+    
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();

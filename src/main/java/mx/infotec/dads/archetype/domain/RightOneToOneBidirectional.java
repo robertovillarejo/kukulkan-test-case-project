@@ -20,7 +20,8 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- */package mx.infotec.dads.archetype.domain;
+ */
+package mx.infotec.dads.archetype.domain;
 
 import javax.persistence.*;
 
@@ -47,8 +48,11 @@ public class RightOneToOneBidirectional implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", unique = true, nullable = false)
-    private Long id;	    @OneToOne(mappedBy = "rightOneToOneBidirectional")
+    private Long id;	    
+    
+    @OneToOne(mappedBy = "rightOneToOneBidirectional")
     private LeftBidirectional leftOneToOneBidirectional;
+    
     /**
      * Este método fue generado automaticamente por kukulkan 
      * Este método GETTER fue generado para la llave primaria right_one_to_one_bidirectional.id
@@ -71,7 +75,9 @@ public class RightOneToOneBidirectional implements Serializable {
      */
     public void setId(Long id) {
         this.id = id;
-    }	    public LeftBidirectional getLeftOneToOneBidirectional() {
+    }	    
+    
+    public LeftBidirectional getLeftOneToOneBidirectional() {
         return leftOneToOneBidirectional;
     }
 
@@ -93,10 +99,12 @@ public class RightOneToOneBidirectional implements Serializable {
         }
         return Objects.equals(getId(), rightOneToOneBidirectional.getId());
     }
+
     @Override
     public int hashCode() {
         return Objects.hashCode(getId());
     }
+    
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();

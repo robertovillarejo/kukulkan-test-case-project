@@ -55,12 +55,12 @@ import mx.infotec.dads.archetype.web.rest.util.PaginationUtil;
 
 import mx.infotec.dads.archetype.domain.LeftUnidirectional;
 import mx.infotec.dads.archetype.service.LeftUnidirectionalService;
+
 /**
  * 
  * @author kukulkan
  * @kukulkanGenerated 20180625150003
  */
-
 @RestController
 @RequestMapping("/api")
 public class LeftUnidirectionalResource {

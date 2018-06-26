@@ -55,12 +55,12 @@ import mx.infotec.dads.archetype.web.rest.util.PaginationUtil;
 
 import mx.infotec.dads.archetype.domain.RightOneToManyUnidirectional;
 import mx.infotec.dads.archetype.service.RightOneToManyUnidirectionalService;
+
 /**
  * 
  * @author kukulkan
  * @kukulkanGenerated 20180625150003
  */
-
 @RestController
 @RequestMapping("/api")
 public class RightOneToManyUnidirectionalResource {

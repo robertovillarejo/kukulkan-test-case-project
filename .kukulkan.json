@@ -1,0 +1,15 @@
+{
+  "id" : "testcase",
+  "packaging" : "mx.infotec.dads.archetype",
+  "version" : "0.0.1",
+  "author" : "kukulkan",
+  "year" : "2018",
+  "database" : {
+    "databaseType" : "SQL_MYSQL",
+    "globalGenerationType" : "IDENTITY"
+  },
+  "layers" : [ "angular-js", "spring-rest", "spring-service", "spring-repository", "domain-core", "liquibase" ],
+  "layersToProcess" : [ ],
+  "timestamp" : "2018-06-26T11:40:28.970",
+  "plugins" : [ ]
+}

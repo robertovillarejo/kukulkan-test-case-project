@@ -55,12 +55,12 @@ import mx.infotec.dads.archetype.web.rest.util.PaginationUtil;
 
 import mx.infotec.dads.archetype.domain.RightManyToManyBidirectional;
 import mx.infotec.dads.archetype.service.RightManyToManyBidirectionalService;
+
 /**
  * 
  * @author kukulkan
  * @kukulkanGenerated 20180625150003
  */
-
 @RestController
 @RequestMapping("/api")
 public class RightManyToManyBidirectionalResource {

@@ -20,7 +20,8 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- */package mx.infotec.dads.archetype.domain;
+ */
+package mx.infotec.dads.archetype.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.util.HashSet;
@@ -39,6 +40,7 @@ import java.io.Serializable;
 @Entity
 @Table(name = "right_many_to_many_unidirectional")
 public class RightManyToManyUnidirectional implements Serializable {
+    
     private static final long serialVersionUID = 1L;
     
     /**
@@ -50,7 +52,9 @@ public class RightManyToManyUnidirectional implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", unique = true, nullable = false)
-    private Long id;	    /**
+    private Long id;	    
+    
+    /**
      * Este método fue generado automaticamente por kukulkan 
      * Este método GETTER fue generado para la llave primaria right_many_to_many_unidirectional.id
      *
@@ -73,6 +77,7 @@ public class RightManyToManyUnidirectional implements Serializable {
     public void setId(Long id) {
         this.id = id;
     }	
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -87,10 +92,12 @@ public class RightManyToManyUnidirectional implements Serializable {
         }
         return Objects.equals(getId(), rightManyToManyUnidirectional.getId());
     }
+
     @Override
     public int hashCode() {
         return Objects.hashCode(getId());
     }
+    
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();

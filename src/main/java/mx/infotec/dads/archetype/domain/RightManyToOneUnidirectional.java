@@ -20,7 +20,8 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- */package mx.infotec.dads.archetype.domain;
+ */
+package mx.infotec.dads.archetype.domain;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -49,7 +50,9 @@ public class RightManyToOneUnidirectional implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", unique = true, nullable = false)
-    private Long id;	    /**
+    private Long id;	    
+    
+    /**
      * Este método fue generado automaticamente por kukulkan 
      * Este método GETTER fue generado para la llave primaria right_many_to_one_unidirectional.id
      *
@@ -71,7 +74,8 @@ public class RightManyToOneUnidirectional implements Serializable {
      */
     public void setId(Long id) {
         this.id = id;
-    }	
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -86,10 +90,12 @@ public class RightManyToOneUnidirectional implements Serializable {
         }
         return Objects.equals(getId(), rightManyToOneUnidirectional.getId());
     }
+
     @Override
     public int hashCode() {
         return Objects.hashCode(getId());
     }
+    
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();

@@ -20,7 +20,8 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- */package mx.infotec.dads.archetype.domain;
+ */
+package mx.infotec.dads.archetype.domain;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -38,6 +39,7 @@ import java.io.Serializable;
 @Entity
 @Table(name = "right_many_to_one_bidirectional")
 public class RightManyToOneBidirectional implements Serializable {
+    
     private static final long serialVersionUID = 1L;
     
     /**
@@ -49,9 +51,11 @@ public class RightManyToOneBidirectional implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", unique = true, nullable = false)
-    private Long id;	    	
+    private Long id;	
+
     @OneToMany(mappedBy = "rightManyToOneBidirectional")
     private Set<LeftBidirectional> leftManyToOneBidirectional = new HashSet<>();
+    
     /**
      * Este método fue generado automaticamente por kukulkan 
      * Este método GETTER fue generado para la llave primaria right_many_to_one_bidirectional.id
@@ -74,7 +78,9 @@ public class RightManyToOneBidirectional implements Serializable {
      */
     public void setId(Long id) {
         this.id = id;
-    }	    public Set<LeftBidirectional> getLeftManyToOneBidirectional() {
+    }	    
+    
+    public Set<LeftBidirectional> getLeftManyToOneBidirectional() {
         return leftManyToOneBidirectional;
     }
     
@@ -108,10 +114,12 @@ public class RightManyToOneBidirectional implements Serializable {
         }
         return Objects.equals(getId(), rightManyToOneBidirectional.getId());
     }
+
     @Override
     public int hashCode() {
         return Objects.hashCode(getId());
     }
+    
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
