@@ -37,30 +37,31 @@ import java.io.Serializable;
 @Entity
 @Table(name = "right_one_to_many_bidirectional")
 public class RightOneToManyBidirectional implements Serializable {
+
     private static final long serialVersionUID = 1L;
     
     /**
      * Este campo fue generado automaticamente por kukulkan 
      * Este campo corresponde a la llave primaria id
      *
-     * @kukulkanGenerated 20180625150003
+     * @kukulkanGenerated 20180626114028
      */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", unique = true, nullable = false)
     private Long id;
-
+	
+    	
     @ManyToOne
     @JoinColumn(name = "left_one_to_many_bidirectional_id")
     private LeftBidirectional leftOneToManyBidirectional;
-
     /**
      * Este método fue generado automaticamente por kukulkan 
      * Este método GETTER fue generado para la llave primaria right_one_to_many_bidirectional.id
      *
      * @return el valor de id
      *
-     * @kukulkanGenerated 20180625150003
+     * @kukulkanGenerated 20180626114028
      */
     public Long getId() {
         return id;
@@ -70,22 +71,22 @@ public class RightOneToManyBidirectional implements Serializable {
      * Este método fue generado automaticamente por kukulkan 
      * Este método SETTER fue generado para la llave primaria. right_one_to_many_bidirectional.id
      *
-     * @return el valor de area_conocimiento.id
+     * @return el valor de id
      *
-     * @kukulkanGenerated 20180625150003
+     * @kukulkanGenerated 20180626114028
      */
     public void setId(Long id) {
         this.id = id;
-    }	    
-    
-    public LeftBidirectional getLeftOneToManyBidirectional() {
+    }
+
+	    public LeftBidirectional getLeftOneToManyBidirectional() {
         return leftOneToManyBidirectional;
     }
 
     public void setLeftOneToManyBidirectional(LeftBidirectional leftOneToManyBidirectional) {
         this.leftOneToManyBidirectional = leftOneToManyBidirectional;
     }
-
+    
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -114,4 +115,5 @@ public class RightOneToManyBidirectional implements Serializable {
         sb.append("Hash = ").append(hashCode());
                 sb.append("]");
         return sb.toString();
-    }}
+    }
+}

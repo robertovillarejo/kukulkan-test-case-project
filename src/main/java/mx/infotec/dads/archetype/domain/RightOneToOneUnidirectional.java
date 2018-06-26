@@ -37,26 +37,27 @@ import java.io.Serializable;
 @Entity
 @Table(name = "right_one_to_one_unidirectional")
 public class RightOneToOneUnidirectional implements Serializable {
+
     private static final long serialVersionUID = 1L;
     
     /**
      * Este campo fue generado automaticamente por kukulkan 
      * Este campo corresponde a la llave primaria id
      *
-     * @kukulkanGenerated 20180625150003
+     * @kukulkanGenerated 20180626114028
      */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", unique = true, nullable = false)
-    private Long id;	    
-    
+    private Long id;
+	
     /**
      * Este método fue generado automaticamente por kukulkan 
      * Este método GETTER fue generado para la llave primaria right_one_to_one_unidirectional.id
      *
      * @return el valor de id
      *
-     * @kukulkanGenerated 20180625150003
+     * @kukulkanGenerated 20180626114028
      */
     public Long getId() {
         return id;
@@ -66,15 +67,15 @@ public class RightOneToOneUnidirectional implements Serializable {
      * Este método fue generado automaticamente por kukulkan 
      * Este método SETTER fue generado para la llave primaria. right_one_to_one_unidirectional.id
      *
-     * @return el valor de area_conocimiento.id
+     * @return el valor de id
      *
-     * @kukulkanGenerated 20180625150003
+     * @kukulkanGenerated 20180626114028
      */
     public void setId(Long id) {
         this.id = id;
-    }	
+    }
 
-    @Override
+	    @Override
     public boolean equals(Object o) {
         if (this == o) {
             return true;
@@ -102,4 +103,5 @@ public class RightOneToOneUnidirectional implements Serializable {
         sb.append("Hash = ").append(hashCode());
                 sb.append("]");
         return sb.toString();
-    }}
+    }
+}

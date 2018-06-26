@@ -59,7 +59,7 @@ import mx.infotec.dads.archetype.service.RightManyToOneBidirectionalService;
 /**
  * 
  * @author kukulkan
- * @kukulkanGenerated 20180625150003
+ * @kukulkanGenerated 20180626114028
  */
 @RestController
 @RequestMapping("/api")

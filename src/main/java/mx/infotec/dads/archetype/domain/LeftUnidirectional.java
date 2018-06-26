@@ -40,20 +40,20 @@ import java.io.Serializable;
 @Entity
 @Table(name = "left_unidirectional")
 public class LeftUnidirectional implements Serializable {
-    
+
     private static final long serialVersionUID = 1L;
     
     /**
      * Este campo fue generado automaticamente por kukulkan 
      * Este campo corresponde a la llave primaria id
      *
-     * @kukulkanGenerated 20180625150003
+     * @kukulkanGenerated 20180626114028
      */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", unique = true, nullable = false)
     private Long id;
-
+	    
     @OneToOne
     @JoinColumn(name = "recursive_child_one_to_one_unidirectional_id", unique = true)
     private LeftUnidirectional recursiveChildOneToOneUnidirectional;
@@ -89,6 +89,7 @@ public class LeftUnidirectional implements Serializable {
     @OneToOne
     @JoinColumn(name = "one_to_one_unidirectional_id", unique = true)
     private RightOneToOneUnidirectional oneToOneUnidirectional;
+
     	
     @ManyToOne
     @JoinColumn(name = "left_unidirectional_id")
@@ -99,7 +100,7 @@ public class LeftUnidirectional implements Serializable {
      *
      * @return el valor de id
      *
-     * @kukulkanGenerated 20180625150003
+     * @kukulkanGenerated 20180626114028
      */
     public Long getId() {
         return id;
@@ -109,22 +110,22 @@ public class LeftUnidirectional implements Serializable {
      * Este método fue generado automaticamente por kukulkan 
      * Este método SETTER fue generado para la llave primaria. left_unidirectional.id
      *
-     * @return el valor de area_conocimiento.id
+     * @return el valor de id
      *
-     * @kukulkanGenerated 20180625150003
+     * @kukulkanGenerated 20180626114028
      */
     public void setId(Long id) {
         this.id = id;
-    }	    
-    
-    public LeftUnidirectional getLeftUnidirectional() {
+    }
+
+	    public LeftUnidirectional getLeftUnidirectional() {
         return leftUnidirectional;
     }
 
     public void setLeftUnidirectional(LeftUnidirectional leftUnidirectional) {
         this.leftUnidirectional = leftUnidirectional;
     }
-
+    
     public LeftUnidirectional getRecursiveChildOneToOneUnidirectional() {
         return recursiveChildOneToOneUnidirectional;
     }
@@ -132,7 +133,8 @@ public class LeftUnidirectional implements Serializable {
     public void setRecursiveChildOneToOneUnidirectional(LeftUnidirectional recursiveChildOneToOneUnidirectional) {
         this.recursiveChildOneToOneUnidirectional = recursiveChildOneToOneUnidirectional;
     }
-
+    
+    
     public Set<LeftUnidirectional> getRecursiveChildrenOneToManyUnidirectional() {
         return recursiveChildrenOneToManyUnidirectional;
     }
@@ -152,7 +154,7 @@ public class LeftUnidirectional implements Serializable {
     public void setRecursiveChildrenOneToManyUnidirectional(Set<LeftUnidirectional> recursiveChildrenOneToManyUnidirectional) {
         this.recursiveChildrenOneToManyUnidirectional = recursiveChildrenOneToManyUnidirectional;
     }
-
+    
     public LeftUnidirectional getRecursiveChildManyToOneUnidirectional() {
         return recursiveChildManyToOneUnidirectional;
     }
@@ -160,7 +162,8 @@ public class LeftUnidirectional implements Serializable {
     public void setRecursiveChildManyToOneUnidirectional(LeftUnidirectional recursiveChildManyToOneUnidirectional) {
         this.recursiveChildManyToOneUnidirectional = recursiveChildManyToOneUnidirectional;
     }
-
+    
+    
     public Set<LeftUnidirectional> getRecursiveChildrenManyToManyUnidirectional() {
         return recursiveChildrenManyToManyUnidirectional;
     }
@@ -178,7 +181,8 @@ public class LeftUnidirectional implements Serializable {
     public void setRecursiveChildrenManyToManyUnidirectional(Set<LeftUnidirectional> recursiveChildrenManyToManyUnidirectional) {
         this.recursiveChildrenManyToManyUnidirectional = recursiveChildrenManyToManyUnidirectional;
     }
-
+    
+    
     public Set<RightManyToManyUnidirectional> getManyToManyUnidirectional() {
         return manyToManyUnidirectional;
     }
@@ -196,7 +200,7 @@ public class LeftUnidirectional implements Serializable {
     public void setManyToManyUnidirectional(Set<RightManyToManyUnidirectional> manyToManyUnidirectional) {
         this.manyToManyUnidirectional = manyToManyUnidirectional;
     }
-
+    
     public RightManyToOneUnidirectional getManyToOneUnidirectional() {
         return manyToOneUnidirectional;
     }
@@ -204,7 +208,8 @@ public class LeftUnidirectional implements Serializable {
     public void setManyToOneUnidirectional(RightManyToOneUnidirectional manyToOneUnidirectional) {
         this.manyToOneUnidirectional = manyToOneUnidirectional;
     }
-
+    
+    
     public Set<RightOneToManyUnidirectional> getOneToManyUnidirectional() {
         return oneToManyUnidirectional;
     }
@@ -224,7 +229,7 @@ public class LeftUnidirectional implements Serializable {
     public void setOneToManyUnidirectional(Set<RightOneToManyUnidirectional> oneToManyUnidirectional) {
         this.oneToManyUnidirectional = oneToManyUnidirectional;
     }
-
+    
     public RightOneToOneUnidirectional getOneToOneUnidirectional() {
         return oneToOneUnidirectional;
     }
@@ -232,7 +237,7 @@ public class LeftUnidirectional implements Serializable {
     public void setOneToOneUnidirectional(RightOneToOneUnidirectional oneToOneUnidirectional) {
         this.oneToOneUnidirectional = oneToOneUnidirectional;
     }
-
+    
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -261,4 +266,5 @@ public class LeftUnidirectional implements Serializable {
         sb.append("Hash = ").append(hashCode());
                 sb.append("]");
         return sb.toString();
-    }}
+    }
+}

@@ -31,7 +31,7 @@ import mx.infotec.dads.archetype.domain.RightManyToManyBidirectional;
  * RightManyToManyBidirectionalRepository
  * 
  * @author kukulkan
- * @kukulkanGenerated 20180625150003
+ * @kukulkanGenerated 20180626114028
  */
 public interface RightManyToManyBidirectionalRepository extends JpaRepository<RightManyToManyBidirectional, Long> {
 
