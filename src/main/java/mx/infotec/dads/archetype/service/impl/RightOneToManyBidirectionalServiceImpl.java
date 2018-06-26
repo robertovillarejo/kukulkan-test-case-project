@@ -39,7 +39,7 @@ import mx.infotec.dads.archetype.service.RightOneToManyBidirectionalService;
  * RightOneToManyBidirectionalServiceImpl
  * 
  * @author kukulkan
- * @kukulkanGenerated 20180626114028
+ * @kukulkanGenerated 20180101000000
  */
 @Service
 @Transactional

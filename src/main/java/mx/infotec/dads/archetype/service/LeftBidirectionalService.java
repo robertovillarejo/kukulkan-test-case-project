@@ -32,7 +32,7 @@ import mx.infotec.dads.archetype.domain.LeftBidirectional;
  * LeftBidirectionalService
  * 
  * @author kukulkan
- * @kukulkanGenerated 20180626114028
+ * @kukulkanGenerated 20180101000000
  */
 public interface LeftBidirectionalService {
 

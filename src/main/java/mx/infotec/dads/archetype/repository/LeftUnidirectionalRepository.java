@@ -31,7 +31,7 @@ import mx.infotec.dads.archetype.domain.LeftUnidirectional;
  * LeftUnidirectionalRepository
  * 
  * @author kukulkan
- * @kukulkanGenerated 20180626114028
+ * @kukulkanGenerated 20180101000000
  */
 public interface LeftUnidirectionalRepository extends JpaRepository<LeftUnidirectional, Long> {
 

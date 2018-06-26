@@ -46,7 +46,7 @@ public class RightManyToOneBidirectional implements Serializable {
      * Este campo fue generado automaticamente por kukulkan 
      * Este campo corresponde a la llave primaria id
      *
-     * @kukulkanGenerated 20180626114028
+     * @kukulkanGenerated 20180101000000
      */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -62,7 +62,7 @@ public class RightManyToOneBidirectional implements Serializable {
      *
      * @return el valor de id
      *
-     * @kukulkanGenerated 20180626114028
+     * @kukulkanGenerated 20180101000000
      */
     public Long getId() {
         return id;
@@ -74,7 +74,7 @@ public class RightManyToOneBidirectional implements Serializable {
      *
      * @return el valor de id
      *
-     * @kukulkanGenerated 20180626114028
+     * @kukulkanGenerated 20180101000000
      */
     public void setId(Long id) {
         this.id = id;

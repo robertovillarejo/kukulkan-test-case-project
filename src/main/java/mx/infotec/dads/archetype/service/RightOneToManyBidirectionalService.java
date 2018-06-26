@@ -32,7 +32,7 @@ import mx.infotec.dads.archetype.domain.RightOneToManyBidirectional;
  * RightOneToManyBidirectionalService
  * 
  * @author kukulkan
- * @kukulkanGenerated 20180626114028
+ * @kukulkanGenerated 20180101000000
  */
 public interface RightOneToManyBidirectionalService {
 
