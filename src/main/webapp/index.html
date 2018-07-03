@@ -1,13 +1,12 @@
 <!doctype html>
-<html class="no-js" lang="es" dir="ltr">
+<html class="no-js">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>testcase</title>
     <meta name="description" content="">
     <meta name="google" value="notranslate">
-    <meta name="theme-color" content="#000000">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css content/css/vendor.css -->
     <!-- bower:css -->
@@ -19,7 +18,6 @@
     <link rel="stylesheet" href="content/css/main.css">
     <!-- endbuild -->
     <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="manifest" href="manifest.webapp" />
 </head>
 <body ng-app="testcaseApp" ng-strict-di>
     <!--[if lt IE 9]>
@@ -36,18 +34,7 @@
             <p data-translate="footer">This is your footer</p>
         </div>
     </div>
-    <noscript>
-        <h1>You must enable javascript to view this page.</h1>
-    </noscript>
-    <!-- uncomment this for adding service worker
-        <script>
-            if ('serviceWorker' in navigator) {
-                 navigator.serviceWorker
-                    .register('./sw.js')
-                    .then(function() { console.log('Service Worker Registered'); });
-            }
-        </script>
-    -->
+
     <!-- Google Analytics: uncomment and change UA-XXXXX-X to be your site's ID.
     <script>
         (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -107,6 +94,76 @@
     <script src="app/home/home.state.js"></script>
     <script src="app/home/home.controller.js"></script>
     <script src="app/entities/entity.state.js"></script>
+    <script src="app/entities/leftUnidirectional/leftUnidirectional-dialog.controller.js"></script>
+    <script src="app/entities/leftUnidirectional/leftUnidirectional-detail.controller.js"></script>
+    <script src="app/entities/leftUnidirectional/leftUnidirectional-delete-dialog.controller.js"></script>
+    <script src="app/entities/leftUnidirectional/leftUnidirectional.state.js"></script>
+    <script src="app/entities/leftUnidirectional/leftUnidirectional.service.js"></script>
+    <script src="app/entities/leftUnidirectional/leftUnidirectional.search.service.js"></script>
+    <script src="app/entities/leftUnidirectional/leftUnidirectional.controller.js"></script>
+    <script src="app/entities/rightOneToOneUnidirectional/rightOneToOneUnidirectional-dialog.controller.js"></script>
+    <script src="app/entities/rightOneToOneUnidirectional/rightOneToOneUnidirectional-detail.controller.js"></script>
+    <script src="app/entities/rightOneToOneUnidirectional/rightOneToOneUnidirectional-delete-dialog.controller.js"></script>
+    <script src="app/entities/rightOneToOneUnidirectional/rightOneToOneUnidirectional.state.js"></script>
+    <script src="app/entities/rightOneToOneUnidirectional/rightOneToOneUnidirectional.service.js"></script>
+    <script src="app/entities/rightOneToOneUnidirectional/rightOneToOneUnidirectional.search.service.js"></script>
+    <script src="app/entities/rightOneToOneUnidirectional/rightOneToOneUnidirectional.controller.js"></script>
+    <script src="app/entities/rightOneToManyUnidirectional/rightOneToManyUnidirectional-dialog.controller.js"></script>
+    <script src="app/entities/rightOneToManyUnidirectional/rightOneToManyUnidirectional-detail.controller.js"></script>
+    <script src="app/entities/rightOneToManyUnidirectional/rightOneToManyUnidirectional-delete-dialog.controller.js"></script>
+    <script src="app/entities/rightOneToManyUnidirectional/rightOneToManyUnidirectional.state.js"></script>
+    <script src="app/entities/rightOneToManyUnidirectional/rightOneToManyUnidirectional.service.js"></script>
+    <script src="app/entities/rightOneToManyUnidirectional/rightOneToManyUnidirectional.search.service.js"></script>
+    <script src="app/entities/rightOneToManyUnidirectional/rightOneToManyUnidirectional.controller.js"></script>
+    <script src="app/entities/rightManyToOneUnidirectional/rightManyToOneUnidirectional-dialog.controller.js"></script>
+    <script src="app/entities/rightManyToOneUnidirectional/rightManyToOneUnidirectional-detail.controller.js"></script>
+    <script src="app/entities/rightManyToOneUnidirectional/rightManyToOneUnidirectional-delete-dialog.controller.js"></script>
+    <script src="app/entities/rightManyToOneUnidirectional/rightManyToOneUnidirectional.state.js"></script>
+    <script src="app/entities/rightManyToOneUnidirectional/rightManyToOneUnidirectional.service.js"></script>
+    <script src="app/entities/rightManyToOneUnidirectional/rightManyToOneUnidirectional.search.service.js"></script>
+    <script src="app/entities/rightManyToOneUnidirectional/rightManyToOneUnidirectional.controller.js"></script>
+    <script src="app/entities/rightManyToManyUnidirectional/rightManyToManyUnidirectional-dialog.controller.js"></script>
+    <script src="app/entities/rightManyToManyUnidirectional/rightManyToManyUnidirectional-detail.controller.js"></script>
+    <script src="app/entities/rightManyToManyUnidirectional/rightManyToManyUnidirectional-delete-dialog.controller.js"></script>
+    <script src="app/entities/rightManyToManyUnidirectional/rightManyToManyUnidirectional.state.js"></script>
+    <script src="app/entities/rightManyToManyUnidirectional/rightManyToManyUnidirectional.service.js"></script>
+    <script src="app/entities/rightManyToManyUnidirectional/rightManyToManyUnidirectional.search.service.js"></script>
+    <script src="app/entities/rightManyToManyUnidirectional/rightManyToManyUnidirectional.controller.js"></script>
+    <script src="app/entities/leftBidirectional/leftBidirectional-dialog.controller.js"></script>
+    <script src="app/entities/leftBidirectional/leftBidirectional-detail.controller.js"></script>
+    <script src="app/entities/leftBidirectional/leftBidirectional-delete-dialog.controller.js"></script>
+    <script src="app/entities/leftBidirectional/leftBidirectional.state.js"></script>
+    <script src="app/entities/leftBidirectional/leftBidirectional.service.js"></script>
+    <script src="app/entities/leftBidirectional/leftBidirectional.search.service.js"></script>
+    <script src="app/entities/leftBidirectional/leftBidirectional.controller.js"></script>
+    <script src="app/entities/rightOneToOneBidirectional/rightOneToOneBidirectional-dialog.controller.js"></script>
+    <script src="app/entities/rightOneToOneBidirectional/rightOneToOneBidirectional-detail.controller.js"></script>
+    <script src="app/entities/rightOneToOneBidirectional/rightOneToOneBidirectional-delete-dialog.controller.js"></script>
+    <script src="app/entities/rightOneToOneBidirectional/rightOneToOneBidirectional.state.js"></script>
+    <script src="app/entities/rightOneToOneBidirectional/rightOneToOneBidirectional.service.js"></script>
+    <script src="app/entities/rightOneToOneBidirectional/rightOneToOneBidirectional.search.service.js"></script>
+    <script src="app/entities/rightOneToOneBidirectional/rightOneToOneBidirectional.controller.js"></script>
+    <script src="app/entities/rightOneToManyBidirectional/rightOneToManyBidirectional-dialog.controller.js"></script>
+    <script src="app/entities/rightOneToManyBidirectional/rightOneToManyBidirectional-detail.controller.js"></script>
+    <script src="app/entities/rightOneToManyBidirectional/rightOneToManyBidirectional-delete-dialog.controller.js"></script>
+    <script src="app/entities/rightOneToManyBidirectional/rightOneToManyBidirectional.state.js"></script>
+    <script src="app/entities/rightOneToManyBidirectional/rightOneToManyBidirectional.service.js"></script>
+    <script src="app/entities/rightOneToManyBidirectional/rightOneToManyBidirectional.search.service.js"></script>
+    <script src="app/entities/rightOneToManyBidirectional/rightOneToManyBidirectional.controller.js"></script>
+    <script src="app/entities/rightManyToOneBidirectional/rightManyToOneBidirectional-dialog.controller.js"></script>
+    <script src="app/entities/rightManyToOneBidirectional/rightManyToOneBidirectional-detail.controller.js"></script>
+    <script src="app/entities/rightManyToOneBidirectional/rightManyToOneBidirectional-delete-dialog.controller.js"></script>
+    <script src="app/entities/rightManyToOneBidirectional/rightManyToOneBidirectional.state.js"></script>
+    <script src="app/entities/rightManyToOneBidirectional/rightManyToOneBidirectional.service.js"></script>
+    <script src="app/entities/rightManyToOneBidirectional/rightManyToOneBidirectional.search.service.js"></script>
+    <script src="app/entities/rightManyToOneBidirectional/rightManyToOneBidirectional.controller.js"></script>
+    <script src="app/entities/rightManyToManyBidirectional/rightManyToManyBidirectional-dialog.controller.js"></script>
+    <script src="app/entities/rightManyToManyBidirectional/rightManyToManyBidirectional-detail.controller.js"></script>
+    <script src="app/entities/rightManyToManyBidirectional/rightManyToManyBidirectional-delete-dialog.controller.js"></script>
+    <script src="app/entities/rightManyToManyBidirectional/rightManyToManyBidirectional.state.js"></script>
+    <script src="app/entities/rightManyToManyBidirectional/rightManyToManyBidirectional.service.js"></script>
+    <script src="app/entities/rightManyToManyBidirectional/rightManyToManyBidirectional.search.service.js"></script>
+    <script src="app/entities/rightManyToManyBidirectional/rightManyToManyBidirectional.controller.js"></script>
     <script src="app/components/util/truncate-words.filter.js"></script>
     <script src="app/components/util/truncate-characters.filter.js"></script>
     <script src="app/components/util/sort-by.directive.js"></script>
@@ -114,7 +171,6 @@
     <script src="app/components/util/parse-links.service.js"></script>
     <script src="app/components/util/pagination-util.service.js"></script>
     <script src="app/components/util/jhi-item-count.directive.js"></script>
-    <script src="app/components/util/error.constants.js"></script>
     <script src="app/components/util/date-util.service.js"></script>
     <script src="app/components/util/data-util.service.js"></script>
     <script src="app/components/util/capitalize.filter.js"></script>
