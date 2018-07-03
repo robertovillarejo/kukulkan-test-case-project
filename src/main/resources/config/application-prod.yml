@@ -13,7 +13,7 @@
 logging:
     level:
         ROOT: INFO
-        mx.infotec.dads.archetype: INFO
+        mx.infotec.dads: INFO
         io.github.jhipster: INFO
 
 spring:

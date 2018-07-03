@@ -14,7 +14,7 @@
 logging:
     level:
         ROOT: DEBUG
-        mx.infotec.dads.archetype: DEBUG
+        mx.infotec.dads: DEBUG
         io.github.jhipster: DEBUG
 
 spring:
