@@ -10,6 +10,6 @@
   },
   "layers" : [ "angular-js", "spring-rest", "spring-service", "spring-repository", "domain-core", "liquibase" ],
   "layersToProcess" : [ ],
-  "timestamp" : "2018-07-03T17:57:11.679",
+  "timestamp" : "2018-07-03T18:00:36.506",
   "plugins" : [ ]
 }
