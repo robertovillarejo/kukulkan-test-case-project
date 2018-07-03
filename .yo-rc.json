@@ -1,13 +1,13 @@
 {
   "generator-jhipster": {
     "promptValues": {
-      "packageName": "mx.infotec.dads",
+      "packageName": "mx.infotec.dads.archetype",
       "nativeLanguage": "es"
     },
     "jhipsterVersion": "4.13.3",
     "baseName": "testcase",
-    "packageName": "mx.infotec.dads",
-    "packageFolder": "mx.infotec.dads",
+    "packageName": "mx.infotec.dads.archetype",
+    "packageFolder": "mx.infotec.dads.archetype",
     "serverPort": "8080",
     "authenticationType": "jwt",
     "cacheProvider": "ehcache",

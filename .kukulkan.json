@@ -1,6 +1,6 @@
 {
   "id" : "testcase",
-  "packaging" : "mx.infotec.dads",
+  "packaging" : "mx.infotec.dads.archetype",
   "version" : "0.0.1",
   "author" : "kukulkan",
   "year" : "2018",
@@ -10,6 +10,6 @@
   },
   "layers" : [ "angular-js", "spring-rest", "spring-service", "spring-repository", "domain-core", "liquibase" ],
   "layersToProcess" : [ ],
-  "timestamp" : "2018-01-01T18:00:00.000",
+  "timestamp" : "2018-07-03T18:15:28.934",
   "plugins" : [ ]
 }
