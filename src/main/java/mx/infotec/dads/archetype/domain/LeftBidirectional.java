@@ -90,6 +90,7 @@ public class LeftBidirectional implements Serializable {
     @JoinColumn(name = "right_one_to_one_bidirectional_id", unique = true)
     private RightOneToOneBidirectional rightOneToOneBidirectional;
 
+	@JsonIgnore
     @OneToOne(mappedBy = "recursiveChildOneToOneBidirectional")
     private LeftBidirectional recursiveParentOneToOneBidirectional;
     	

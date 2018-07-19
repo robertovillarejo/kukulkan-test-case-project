@@ -13,8 +13,8 @@
                     ng-model="vm.leftBidirectional.id" readonly />
         </div>
         <div class="form-group">
-            <label data-translate="testcaseApp.leftBidirectional.recursiveChildManyToOneBidirectional" for="field_recursiveChildManyToOneBidirectional">RecursiveChildManyToOneBidirectional</label>
-            <select class="form-control" id="field_recursiveChildManyToOneBidirectional" name="recursiveChildManyToOneBidirectional" ng-model="vm.leftBidirectional.recursiveChildManyToOneBidirectional" ng-options="leftBidirectional as leftBidirectional.id for leftBidirectional in vm.leftBidirectional track by leftBidirectional.id">
+            <label data-translate="testcaseApp.leftBidirectional.recursiveChildOneToOneBidirectional" for="field_recursiveChildOneToOneBidirectional">RecursiveChildOneToOneBidirectional</label>
+            <select class="form-control" id="field_recursiveChildOneToOneBidirectional" name="recursiveChildOneToOneBidirectional" ng-model="vm.leftBidirectional.recursiveChildOneToOneBidirectional" ng-options="leftBidirectional as leftBidirectional.id for leftBidirectional in vm.recursiveChildOneToOneBidirectional | orderBy:'id' track by leftBidirectional.id">
                 <option value=""></option>
             </select>
         </div>
@@ -25,6 +25,12 @@
         <div class="form-group">
             <label data-translate="testcaseApp.leftBidirectional.rightManyToOneBidirectional" for="field_rightManyToOneBidirectional">RightManyToOneBidirectional</label>
             <select class="form-control" id="field_rightManyToOneBidirectional" name="rightManyToOneBidirectional" ng-model="vm.leftBidirectional.rightManyToOneBidirectional" ng-options="rightManyToOneBidirectional as rightManyToOneBidirectional.id for rightManyToOneBidirectional in vm.rightManyToOneBidirectional track by rightManyToOneBidirectional.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label data-translate="testcaseApp.leftBidirectional.rightOneToOneBidirectional" for="field_rightOneToOneBidirectional">RightOneToOneBidirectional</label>
+            <select class="form-control" id="field_rightOneToOneBidirectional" name="rightOneToOneBidirectional" ng-model="vm.leftBidirectional.rightOneToOneBidirectional" ng-options="rightOneToOneBidirectional as rightOneToOneBidirectional.id for rightOneToOneBidirectional in vm.rightOneToOneBidirectional | orderBy:'id' track by rightOneToOneBidirectional.id">
                 <option value=""></option>
             </select>
         </div>

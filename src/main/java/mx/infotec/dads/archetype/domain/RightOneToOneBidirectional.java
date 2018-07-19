@@ -23,6 +23,7 @@
  */
 package mx.infotec.dads.archetype.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import javax.persistence.*;
 
 import java.util.Objects;
@@ -51,6 +52,7 @@ public class RightOneToOneBidirectional implements Serializable {
     @Column(name = "id", unique = true, nullable = false)
     private Long id;
 	
+	@JsonIgnore
     @OneToOne(mappedBy = "rightOneToOneBidirectional")
     private LeftBidirectional leftOneToOneBidirectional;
     /**
